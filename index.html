@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance Tracking System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Attendance for Blue Collar Workers</h1>
+  </header>
+
+  <form id="attendanceForm">
+    <label for="workerId">Worker ID:</label>
+    <input type="text" id="workerId" required>
+    
+    <label for="workerName">Worker Name:</label>
+    <input type="text" id="workerName" required>
+
+    <label for="attendanceDate">Date:</label>
+    <input type="date" id="attendanceDate" required>
+
+    <label for="status">Status:</label>
+    <select id="status" required>
+      <option value="">Select</option>
+      <option value="Present">Present</option>
+      <option value="Absent">Absent</option>
+    </select>
+
+    <button type="submit">Mark The Attendance</button>
+  </form>
+
+  <section id="attendanceList">
+    <h2>Attendance Records</h2>
+    <ul id="records"></ul>
+  </section>
+  
+  <section id="summarySection">
+    <h2>Overall Attendance</h2>
+    <ul id="summaryList"></ul>
+  </section>
+  
+  <div class="export-container">
+    <button id="exportBtn">Export to Excel Sheet</button>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

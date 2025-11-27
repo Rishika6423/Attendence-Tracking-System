@@ -1,0 +1,7 @@
+{
+  "attendanceRecords": [
+    { "name": "Rishika", "date": "2025-09-23", "status": "Present"},
+    { "name": "Rishika", "date": "2025-09-22", "status": "Absent"},
+    { "name": "Rishi", "date": "2025-09-23", "status":"Present"}
+  ]
+}
